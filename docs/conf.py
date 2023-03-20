@@ -10,25 +10,25 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os
+# import os
 import re
-import subprocess
+# import subprocess
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-def _get_git_tag():
-    res = subprocess.run("git describe --tags --exact-match".split(), capture_output=True)
-    if res.stderr.decode().startswith("fatal"):
-        # if no exact tag, then get branch
-        res = subprocess.run("git rev-parse --abbrev-ref HEAD".split(), capture_output=True)
-    tag = res.stdout.decode().strip()
-    return tag
+# def _get_git_tag():
+#     res = subprocess.run("git describe --tags --exact-match".split(), capture_output=True)
+#     if res.stderr.decode().startswith("fatal"):
+#         # if no exact tag, then get branch
+#         res = subprocess.run("git rev-parse --abbrev-ref HEAD".split(), capture_output=True)
+#     tag = res.stdout.decode().strip()
+#     return tag
 
-def _parse_release_as_version(rls):
-    m = re.match("^(\d+\.\d+)", rls)
-    if m:
-        return m.group(1)
-    return rls
+# def _parse_release_as_version(rls):
+#     m = re.match("^(\d+\.\d+)", rls)
+#     if m:
+#         return m.group(1)
+#     return rls
 
 
 # -- Project information -----------------------------------------------------
@@ -38,8 +38,8 @@ copyright = '2023, GKS-Transcript'
 author = 'Committers'
 master_doc = 'index'
 # N.B. RTD ignores these values. :-/
-release = _get_git_tag()
-version = _parse_release_as_version(release)
+# release = _get_git_tag()
+# version = _parse_release_as_version(release)
 
 # -- General configuration ---------------------------------------------------
 

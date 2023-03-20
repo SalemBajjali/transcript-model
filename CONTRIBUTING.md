@@ -1,0 +1,4 @@
+# CONTRIBUTING
+
+ROBERT R. FREIMUTH, PH.D.
+Salem Bajjali
