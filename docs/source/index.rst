@@ -6,21 +6,26 @@
 Welcome to Read the Docs Template's documentation!
 ==================================================
 
-Contents:
+.. note::
+
+   This is a test document. Everything in this documentation is not real and was made up. 
+   
+Summary can go here. 
 
 .. toctree::
    :maxdepth: 2
-   :glob:
+   :includehidden:
    
    introduction
-   authors
+   terms_and_model
+   impl-guide/index
 
 
 
-Indices and tables
-==================
+.. Indices and tables
+.. ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
 
