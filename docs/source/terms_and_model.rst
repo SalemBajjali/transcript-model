@@ -1,98 +1,24 @@
-Title of the Page and appendix
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Terminology and Model 
+!!!!!!!!!!!!!!!!!!!!!
 
 Summary goes here 
 
-Variation
-@@@@@@@@@
+Sequence-Based View
+@@@@@@@@@@@@@@@@@@@
 
 Summary goes here 
 
-.. _MolecularVariation:
+.. _Sequence-Based View:
 
-Molecular Variation
+Sequence-Based View
 ###################
 
-.. _Allele:
+.. _Sequence:
 
-Allele
-$$$$$$
-
-Summary goes here 
-
-
-.. _Haplotype:
-
-Haplotype
-$$$$$$$$$
-
-Summary goes here 
-
-
-.. _SystemicVariation:
-
-Systemic Variation
-##################
-
-Summary goes here 
-
-.. _AbsoluteCopyNumber:
-
-AbsoluteCopyNumber
-$$$$$$$$$$$$$$$$$$
-
-Summary goes here
-
-.. _RelativeCopyNumber:
-
-RelativeCopyNumber
-$$$$$$$$$$$$$$$$$$
-
-Summary goes here
-
-.. _genotype:
-
-Genotype
+Sequence
 $$$$$$$$
 
-
 Summary goes here
-
-.. _UtilityVariation:
-
-Utility Variation
-#################
-
-.. include:: defs/UtilityVariation.rst
-
-.. _Text:
-
-Text
-$$$$
-
-Summary goes here
-
-.. _VariationSet:
-
-VariationSet
-$$$$$$$$$$$$
-
-Summary goes here
-
-Locations and Intervals
-@@@@@@@@@@@@@@@@@@@@@@@
-
-
-.. _Location:
-
-Location
-########
-
-Summary goes here 
-
-**Computational Definition**
-
-A contiguous segment of a biological sequence.
 
 **Information Model**
 
@@ -102,43 +28,224 @@ A contiguous segment of a biological sequence.
    :align: left
    :widths: auto
    
-   *  - Column name 
-      - Column name
-      - Column name
-      - Column name
-   *  - first row  
-      - first row
-      - first row
-      - first row
-   *  - second row
-      - second row
-      - second row
-      - second row
+   *  - Field 
+      - Type
+      - Limits
+   *  - type 
+      - CodeableConcept
+      - [1..1]
+   *  - identifier
+      - identifier
+      - [0..*]
+   *  - name
+      - string
+      - [0..*]
+   *  - representation
+      - SequenceRepresentation
+      - [0..*]
+   *  - features
+      - LocatedFeature
+      - [0..*] 
 
+
+.. _LocatedFeature:
+
+LocatedFeature
+$$$$$$$$$$$$$$
+
+Summary goes here 
+
+**Information Model**
+
+.. list-table::
+   :class: clean-wrap
+   :header-rows: 1
+   :align: left
+   :widths: auto
+   
+   *  - Field 
+      - Type
+      - Limits
+   *  - feature 
+      - SequenceFeature
+      - [1..1]
+   *  - location
+      - Location
+      - [1..1]
+   *  - strand
+      - CodeableConcept
+      - [0..1]
+
+.. _SequenceFeature:
+
+SequenceFeature
+$$$$$$$$$$$$$$$
+
+Summary goes here 
+
+**Information Model**
+
+.. list-table::
+   :class: clean-wrap
+   :header-rows: 1
+   :align: left
+   :widths: auto
+   
+   *  - Field 
+      - Type
+      - Limits
+   *  - identifier 
+      - identifier
+      - [0..*]
+   *  - type
+      - CodableConcept
+      - [1..1]
+   *  - name
+      - string
+      - [0..*]
+
+Feature-Based View
+@@@@@@@@@@@@@@@@@@@
+
+Summary goes here 
+
+.. _Feature-Based View:
+
+Feature-Based View
+##################
+
+.. _SequenceFeature:
+
+SequenceFeature
+$$$$$$$$$$$$$$$
+
+Summary goes here 
+
+**Information Model**
+
+.. list-table::
+   :class: clean-wrap
+   :header-rows: 1
+   :align: left
+   :widths: auto
+   
+   *  - Field 
+      - Type
+      - Limits
+   *  - identifier 
+      - identifier
+      - [0..*]
+   *  - type
+      - CodableConcept
+      - [1..1]
+   *  - name
+      - string
+      - [0..*]
+   *  - contexts
+      - ContextualizedFeature
+      - [0..*]
+
+.. _ContextualizedFeature:
+
+ContextualizedFeature
+$$$$$$$$$$$$$$$$$$$$$
+
+Summary goes here 
+
+**Information Model**
+
+.. list-table::
+   :class: clean-wrap
+   :header-rows: 1
+   :align: left
+   :widths: auto
+   
+   *  - Field 
+      - Type
+      - Limits
+   *  - sequence 
+      - Sequence
+      - [1..1]
+   *  - location
+      - Location
+      - [1..1]
+   *  - strand
+      - CodeableConcept
+      - [0..1]
+
+
+.. _Sequence:
+
+Sequence
+$$$$$$$$
+
+Summary goes here 
+
+**Information Model**
+
+.. list-table::
+   :class: clean-wrap
+   :header-rows: 1
+   :align: left
+   :widths: auto
+   
+   *  - Field 
+      - Type
+      - Limits
+   *  - type 
+      - CodeableConcept
+      - [1..1]
+   *  - identifier
+      - identifier
+      - [0..*]
+   *  - name
+      - string
+      - [0..*]
+   *  - representation
+      - SequenceRepresentation
+      - [0..*]
+
+Locations
+@@@@@@@@@
+
+.. _Location:
+
+Location
+########
+
+As used by biologists, the precision of "location" (or "locus") varies
+widely, ranging from precise start and end numerical coordinates
+defining a Location, to bounded regions of a sequence, to conceptual
+references to named genomic features (e.g., chromosomal bands, genes,
+exons) as proxies for the Locations on an implied reference sequence.
+
+The most common and concrete Location is a :ref:`SequenceLocation`, i.e.,
+a Location based on a named sequence and an Interval on that sequence.
+Another common Location is a :ref:`ChromosomeLocation`, specifying a
+location from cytogenetic coordinates of stained metaphase chromosomes.
+Additional :ref:`planned-locations` may also be conceptual or symbolic locations,
+such as a cytoband region or a gene. Any of these may be used as the
+Location for Variation.
+
+.. include:: defs/Location.rst
 
 .. _ChromosomeLocation:
 
 ChromosomeLocation
 $$$$$$$$$$$$$$$$$$
 
-Summary goes here 
+Chromosomal locations based on named features, including named landmarks,
+cytobands, and regions observed from chromosomal staining techniques.
 
+.. include:: defs/ChromosomeLocation.rst
 
 .. _SequenceLocation:
 
 SequenceLocation
 $$$$$$$$$$$$$$$$
 
-Summary goes here 
+A *Sequence Location* is a specified subsequence of a reference :ref:`Sequence`.
+The reference is typically a chromosome, transcript, or protein sequence.
 
-SequenceInterval
-################
-
-Summary goes here 
-
-CytobandInterval
-################
-
-Summary goes here 
-
+.. include:: defs/SequenceLocation.rst
 

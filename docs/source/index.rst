@@ -15,7 +15,8 @@ Summary can go here.
    
    introduction
    terms_and_model
-   impl-guide/index
+   annotated_sequence
+   transcript
 
 
 .. Indices and tables
