@@ -22,7 +22,7 @@ The following tables summarizes data required in the above contexts:
       - Type
       - Limits
    *  - sequence 
-      - Sequence
+      - :ref:`Sequence`
       - [1..1]
    *  - feature
       - LocatedFeature

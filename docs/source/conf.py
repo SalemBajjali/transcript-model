@@ -33,7 +33,7 @@ import re
 
 # -- Project information -----------------------------------------------------
 
-project = 'Project name'
+project = 'GKS-Transcript'
 copyright = '2023, GKS-Transcript'
 author = 'Committers'
 master_doc = 'index'

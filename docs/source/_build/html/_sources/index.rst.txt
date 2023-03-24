@@ -3,6 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+GKS-Transcript
+!!!!!!!!!!!!!!
+
+
 .. note::
 
    This is a test document. Everything in this documentation is not real and was made up. 
@@ -15,8 +19,9 @@ Summary can go here.
    
    introduction
    terms_and_model
-   annotated_sequence
-   transcript
+   AnnotatedSequence
+   Transcript
+   schema
 
 
 .. Indices and tables
