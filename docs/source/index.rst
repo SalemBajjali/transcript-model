@@ -19,8 +19,8 @@ Summary can go here.
    
    introduction
    terms_and_model
-   AnnotatedSequence
-   Transcript
+   annotatedsequence
+   transcript
    schema
 
 
