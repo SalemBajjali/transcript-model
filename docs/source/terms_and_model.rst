@@ -1,144 +1,81 @@
-Title of the Page and appendix
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Terminology and Model 
+!!!!!!!!!!!!!!!!!!!!!
 
 Summary goes here 
 
-Variation
-@@@@@@@@@
+Sequence-Based and Feature-Based
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 Summary goes here 
 
-.. _MolecularVariation:
+.. _Sequence-Based-View:
 
-Molecular Variation
+Sequence-Based View
 ###################
 
-.. _Allele:
+.. _Sequence:
 
-Allele
-$$$$$$
-
-Summary goes here 
-
-
-.. _Haplotype:
-
-Haplotype
-$$$$$$$$$
-
-Summary goes here 
-
-
-.. _SystemicVariation:
-
-Systemic Variation
-##################
-
-Summary goes here 
-
-.. _AbsoluteCopyNumber:
-
-AbsoluteCopyNumber
-$$$$$$$$$$$$$$$$$$
-
-Summary goes here
-
-.. _RelativeCopyNumber:
-
-RelativeCopyNumber
-$$$$$$$$$$$$$$$$$$
-
-Summary goes here
-
-.. _genotype:
-
-Genotype
+Sequence
 $$$$$$$$
 
-
 Summary goes here
 
-.. _UtilityVariation:
+.. include:: defs/DSAM/Sequence.rst
 
-Utility Variation
-#################
+.. _LocatedFeature:
 
-.. include:: defs/UtilityVariation.rst
-
-.. _Text:
-
-Text
-$$$$
-
-Summary goes here
-
-.. _VariationSet:
-
-VariationSet
-$$$$$$$$$$$$
-
-Summary goes here
-
-Locations and Intervals
-@@@@@@@@@@@@@@@@@@@@@@@
-
-
-.. _Location:
-
-Location
-########
+LocatedFeature
+$$$$$$$$$$$$$$
 
 Summary goes here 
 
-**Computational Definition**
+.. include:: defs/DSAM/LocatedFeature.rst
 
-A contiguous segment of a biological sequence.
+.. _SequenceFeature:
+
+SequenceFeature
+$$$$$$$$$$$$$$$
+
+Summary goes here 
+
+.. include:: defs/DSAM/SequenceFeature.rst
+
+.. Feature-Based View
+.. @@@@@@@@@@@@@@@@@@@
+
+.. Summary goes here 
+
+.. _Feature-Based-View:
+
+Feature-Based View
+##################
+
+.. _SequenceFeature:
+
+SequenceFeature
+$$$$$$$$$$$$$$$
+
+Summary goes here 
 
 **Information Model**
 
-.. list-table::
-   :class: clean-wrap
-   :header-rows: 1
-   :align: left
-   :widths: auto
-   
-   *  - Column name 
-      - Column name
-      - Column name
-      - Column name
-   *  - first row  
-      - first row
-      - first row
-      - first row
-   *  - second row
-      - second row
-      - second row
-      - second row
+.. include:: defs/DSAM/SequenceFBV.rst
 
+.. _ContextualizedFeature:
 
-.. _ChromosomeLocation:
-
-ChromosomeLocation
-$$$$$$$$$$$$$$$$$$
+ContextualizedFeature
+$$$$$$$$$$$$$$$$$$$$$
 
 Summary goes here 
 
+.. include:: defs/DSAM/ContextualizedFeature.rst 
 
-.. _SequenceLocation:
 
-SequenceLocation
-$$$$$$$$$$$$$$$$
+.. _SequenceFBV:
 
-Summary goes here 
-
-SequenceInterval
-################
+SequenceFBV
+$$$$$$$$$$$
 
 Summary goes here 
 
-CytobandInterval
-################
-
-Summary goes here 
-
-
+.. include:: defs/DSAM/SequenceFBV.rst
