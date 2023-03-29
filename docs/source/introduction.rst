@@ -6,9 +6,8 @@ The GA4GH GKS Sequence Annotation (SA) subgroup is developing a model to define 
 The SA subgroup created an example of a transcript and related data, which was used to develop this draft model.
 
 TO DO:
- - add link to VRS
+ - `Variation Representation Specification (VRS) <https://vrs.ga4gh.org/en/latest/index.html>`__
  - add link to VA
- - add link to SA example: https://docs.google.com/presentation/d/1k5aqgj6hZ0YMZ26Qda43qlLUagJFN2Fi/edit#slide=id.g15f165633aa_1_0
-
+ - `Sequence Annotation Example <https://docs.google.com/presentation/d/1k5aqgj6hZ0YMZ26Qda43qlLUagJFN2Fi/edit#slide=id.g15f165633aa_1_0>`__
 
 
