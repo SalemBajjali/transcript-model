@@ -25,5 +25,5 @@ The following tables summarizes data required in the above contexts:
       - :ref:`Sequence`
       - [1..1]
    *  - feature
-      - LocatedFeature
+      - :ref:`LocatedFeature`
       - [0..*]

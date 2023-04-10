@@ -16,11 +16,11 @@ Summary goes here
       - Type
       - Limits
    *  - sequence 
-      - Sequence
+      - :ref:`Sequence`
       - [1..1]
    *  - location
       - `Location <https://vrs.ga4gh.org/en/stable/terms_and_model.html#locations-and-intervals>`__
       - [1..1]
    *  - strand
-      - CodableConcept
+      - CodeableConcept
       - [0..1]

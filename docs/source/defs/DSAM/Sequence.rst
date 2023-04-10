@@ -16,7 +16,7 @@ Summary goes here
       - Type
       - Limits
    *  - type 
-      - CodableConcept
+      - CodeableConcept
       - [1..1]
    *  - identifier
       - Identifier
@@ -28,5 +28,5 @@ Summary goes here
       - SequenceRepresentation
       - [0..*]
    *  - features
-      - LocatedFeature
+      - :ref:`LocatedFeature` 
       - [0..*] 

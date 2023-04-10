@@ -22,10 +22,10 @@ The following tables summarizes data required in the above contexts:
       - Type
       - Limits
    *  - exon 
-      - LocatedFeature
+      - :ref:`LocatedFeature`
       - [0..*]
    *  - codingRegion
-      - LocatedFeature
+      - :ref:`LocatedFeature`
       - [0..*]
    *  - associatedGene
       - identifier

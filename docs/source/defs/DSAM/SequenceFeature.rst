@@ -20,8 +20,11 @@ Summary goes here
       - Identifier
       - [0..*]
    *  - type
-      - CodableConcept
+      - CodeableConcept
       - [1..1]
    *  - name
       - string
+      - [0..*]
+   *  - contexts
+      - :ref:`SequenceContext`
       - [0..*]
