@@ -1,6 +1,6 @@
 **Computational Definition**
 
-Summary goes here
+Summary goes here 
 
 **Information Model**
 
@@ -15,8 +15,8 @@ Summary goes here
    *  - Field 
       - Type
       - Limits
-   *  - feature 
-      - :ref:`SequenceFeature` 
+   *  - sequence 
+      - :ref:`Sequence`
       - [1..1]
    *  - location
       - `Location <https://vrs.ga4gh.org/en/stable/terms_and_model.html#locations-and-intervals>`__
