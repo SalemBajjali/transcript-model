@@ -19,7 +19,7 @@ Summary goes here
       - :ref:`Sequence`
       - [1..1]
    *  - location
-      - `Location <https://vrs.ga4gh.org/en/stable/terms_and_model.html#locations-and-intervals>`__
+      - `Location (VRS) <https://vrs.ga4gh.org/en/stable/terms_and_model.html#locations-and-intervals>`__
       - [1..1]
    *  - strand
       - `CodeableConcept (FHIR) <https://build.fhir.org/datatypes.html#CodeableConcept>`__
