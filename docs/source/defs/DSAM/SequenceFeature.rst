@@ -17,10 +17,10 @@ Summary goes here
       - Type
       - Limits
    *  - identifier 
-      - Identifier
+      - `Identifier (FHIR) <https://build.fhir.org/datatypes.html#Identifier>`__
       - [0..*]
    *  - type
-      - CodeableConcept
+      - `CodeableConcept (FHIR) <https://build.fhir.org/datatypes.html#CodeableConcept>`__
       - [1..1]
    *  - name
       - string
