@@ -33,7 +33,7 @@ A *located feature* is a mapping of a sequence feature to a location on a sequen
 .. _SequenceFeature:
 
 SequenceFeature
-###############
+$$$$$$$$$$$$$$$
 
 A *sequence feature* is a structural or functional feature that can be annotated on a Sequence.
 
@@ -44,7 +44,7 @@ A *sequence feature* is a structural or functional feature that can be annotated
 .. _SequenceContext:
 
 SequenceContext
-###############
+$$$$$$$$$$$$$$$
 
 A *sequence context* is the definition of a location on a sequence.
 
