@@ -8,7 +8,7 @@ This information model was derived from the `draft conceptual and logical models
 Note: Some elements are sourced from the `Variation Representation Specification (VRS) <https://vrs.ga4gh.org/en/latest/index.html>`__ and others from the `HL7 Clinical Genomics FHIR Molecular Sequence Resource <https://build.fhir.org/branches/cg-im-molseq-work_in_progress/molecularsequence.html>`__. This draft model was aligned to those specifications as much as possible while still achieving the goals of the SA modeling exercise.
 
 Core Classes
-############
+@@@@@@@@@@@@
 
 .. _Sequence:
 
