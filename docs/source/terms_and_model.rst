@@ -7,6 +7,16 @@ This information model was derived from the `draft conceptual and logical models
 
 Note: Some elements are sourced from the `Variation Representation Specification (VRS) <https://vrs.ga4gh.org/en/latest/index.html>`__ and others from the `HL7 Clinical Genomics FHIR Molecular Sequence Resource <https://build.fhir.org/branches/cg-im-molseq-work_in_progress/molecularsequence.html>`__. This draft model was aligned to those specifications as much as possible while still achieving the goals of the SA modeling exercise.
 
+.. _schema-temp:
+
+.. figure:: images/Generalized_SA_Model.png
+
+
+  Current Draft Of Sequence Annotation Schema
+
+   **Legend** Summary of image
+
+
 Core Classes
 @@@@@@@@@@@@
 
@@ -62,7 +72,7 @@ $$$$$$$$$$$$$$$$$$
 
 An *annotated sequence* is a sequence with associated annotations (e.g., features). Structurally, the class is simply a container for a Sequence and located features. This class may serve as a generalized parent class that can be specialized to support complex types of annotated sequences (e.g., transcripts).
 
-The following tables summarizes data required in the above contexts:
+
 .. include:: defs/DSAM/annotatedsequence.rst
 
 .. _Transcript:

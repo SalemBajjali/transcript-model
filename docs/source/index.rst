@@ -14,7 +14,6 @@ Proposed SA Models
    terms_and_model
    annotatedsequence
    transcript
-   schema
    References
 
 
