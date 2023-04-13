@@ -13,7 +13,7 @@ Core Classes
 .. _Sequence:
 
 Sequence
-########
+$$$$$$$$
 
 The definition of Sequence is identical to `VRS Sequence <https://vrs.ga4gh.org/en/stable/terms_and_model.html#sequence>`__.
 
@@ -24,7 +24,7 @@ A *sequence* is a character string representation of a contiguous, linear polyme
 .. _LocatedFeature:
 
 LocatedFeature
-##############
+$$$$$$$$$$$$$$
 
 A *located feature* is a mapping of a sequence feature to a location on a sequence.
 
