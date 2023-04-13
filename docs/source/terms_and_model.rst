@@ -50,3 +50,30 @@ A *sequence context* is the definition of a location on a sequence.
 
 .. include:: defs/DSAM/SequenceContext.rst 
 
+.. _Annotated-Sequence:
+
+Annotated Sequence
+@@@@@@@@@@@@@@@@@@
+
+An *annotated sequence* is a sequence that contains annotations (e.g., features).
+
+Annotated Sequence
+##################
+
+An *annotated sequence* is a sequence with associated annotations (e.g., features). Structurally, the class is simply a container for a Sequence and located features. This class may serve as a generalized parent class that can be specialized to support complex types of annotated sequences (e.g., transcripts).
+
+The following tables summarizes data required in the above contexts:
+
+.. _Transcript:
+
+Transcript
+$$$$$$$$$$
+
+A *transcript* is a type of annotated sequence.
+
+Transcript
+@@@@@@@@@@
+
+
+
+
