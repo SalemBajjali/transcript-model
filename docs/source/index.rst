@@ -15,6 +15,7 @@ Proposed SA Models
    annotatedsequence
    transcript
    schema
+   References
 
 
 .. Indices and tables
