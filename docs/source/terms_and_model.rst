@@ -63,6 +63,7 @@ $$$$$$$$$$$$$$$$$$
 An *annotated sequence* is a sequence with associated annotations (e.g., features). Structurally, the class is simply a container for a Sequence and located features. This class may serve as a generalized parent class that can be specialized to support complex types of annotated sequences (e.g., transcripts).
 
 The following tables summarizes data required in the above contexts:
+.. include:: defs/DSAM/annotatedsequence.rst
 
 .. _Transcript:
 
@@ -71,8 +72,7 @@ $$$$$$$$$$
 
 A *transcript* is a type of annotated sequence.
 
-Transcript
-$$$$$$$$$$
+.. include:: defs/DSAM/transcript.rst
 
 
 
