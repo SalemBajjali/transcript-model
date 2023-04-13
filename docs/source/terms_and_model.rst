@@ -1,5 +1,5 @@
-Terminology and Model 
-!!!!!!!!!!!!!!!!!!!!!
+Terminology and Information Model 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 This is a DRAFT information model that was developed as part of the GA4GH GKS SA subgroup's exercise to model sequence features and transcripts. It is a work in progress.
 
@@ -7,10 +7,23 @@ This information model was derived from the `draft conceptual and logical models
 
 Note: Some elements are sourced from the `Variation Representation Specification (VRS) <https://vrs.ga4gh.org/en/latest/index.html>`__ and others from the `HL7 Clinical Genomics FHIR Molecular Sequence Resource <https://build.fhir.org/branches/cg-im-molseq-work_in_progress/molecularsequence.html>`__. This draft model was aligned to those specifications as much as possible while still achieving the goals of the SA modeling exercise.
 
+.. _schema-temp:
+
+.. figure:: images/Generalized_SA_Model.png
+
+
+  Current Draft Of Sequence Annotation Schema
+
+   **Legend** Summary of image
+
+
+Core Classes
+@@@@@@@@@@@@
+
 .. _Sequence:
 
 Sequence
-########
+$$$$$$$$
 
 The definition of Sequence is identical to `VRS Sequence <https://vrs.ga4gh.org/en/stable/terms_and_model.html#sequence>`__.
 
@@ -21,7 +34,7 @@ A *sequence* is a character string representation of a contiguous, linear polyme
 .. _LocatedFeature:
 
 LocatedFeature
-##############
+$$$$$$$$$$$$$$
 
 A *located feature* is a mapping of a sequence feature to a location on a sequence.
 
@@ -30,7 +43,7 @@ A *located feature* is a mapping of a sequence feature to a location on a sequen
 .. _SequenceFeature:
 
 SequenceFeature
-###############
+$$$$$$$$$$$$$$$
 
 A *sequence feature* is a structural or functional feature that can be annotated on a Sequence.
 
@@ -41,9 +54,36 @@ A *sequence feature* is a structural or functional feature that can be annotated
 .. _SequenceContext:
 
 SequenceContext
-###############
+$$$$$$$$$$$$$$$
 
 A *sequence context* is the definition of a location on a sequence.
 
 .. include:: defs/DSAM/SequenceContext.rst 
+
+.. _Annotated-Sequence:
+
+Annotated Sequence
+@@@@@@@@@@@@@@@@@@
+
+An *annotated sequence* is a sequence that contains annotations (e.g., features).
+
+Annotated Sequence
+$$$$$$$$$$$$$$$$$$
+
+An *annotated sequence* is a sequence with associated annotations (e.g., features). Structurally, the class is simply a container for a Sequence and located features. This class may serve as a generalized parent class that can be specialized to support complex types of annotated sequences (e.g., transcripts).
+
+
+.. include:: defs/DSAM/annotatedsequence.rst
+
+.. _Transcript:
+
+Transcript
+$$$$$$$$$$
+
+A *transcript* is a type of annotated sequence.
+
+.. include:: defs/DSAM/transcript.rst
+
+
+
 

@@ -86,8 +86,6 @@
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../terms_and_model.html">Terminology and Information Model</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../annotatedsequence.html">Annotated Sequence</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../transcript.html">Transcript</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../schema.html">Schema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../References.html">References</a></li>
 </ul>
@@ -141,7 +139,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/defs/DSAM/LocatedFeature.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/defs/DSAM/transcript.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -155,9 +153,7 @@
            <div itemprop="articleBody">
             
   <p><strong>Computational Definition</strong></p>
-<p>TBD</p>
 <p><strong>Information Model</strong></p>
-<p>A mapping between a given sequence feature and its location on a given sequence.</p>
 <table class="clean-wrap docutils align-left">
 <thead>
 <tr class="row-odd"><th class="head"><p>Field</p></th>
@@ -167,20 +163,20 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>feature</p></td>
-<td><p><a class="reference internal" href="../../terms_and_model.html#sequencefeature"><span class="std std-ref">SequenceFeature</span></a></p></td>
-<td><p>[1..1]</p></td>
-<td><p>The feature at the given location</p></td>
+<tr class="row-even"><td><p>exons</p></td>
+<td><p><a class="reference internal" href="../../terms_and_model.html#locatedfeature"><span class="std std-ref">LocatedFeature</span></a></p></td>
+<td><p>[0..*]</p></td>
+<td><p>A list of sequence features representing the exons of the transcript.</p></td>
 </tr>
-<tr class="row-odd"><td><p>location</p></td>
-<td><p><a class="reference external" href="https://vrs.ga4gh.org/en/stable/terms_and_model.html#locations-and-intervals">Location (VRS)</a></p></td>
-<td><p>[1..1]</p></td>
-<td><p>The location of the feature</p></td>
+<tr class="row-odd"><td><p>codingRegion</p></td>
+<td><p><a class="reference internal" href="../../terms_and_model.html#locatedfeature"><span class="std std-ref">LocatedFeature</span></a></p></td>
+<td><p>[0..*]</p></td>
+<td><p>A list of sequence features representing the coding region of the transcript.</p></td>
 </tr>
-<tr class="row-even"><td><p>strand</p></td>
-<td><p><a class="reference external" href="https://build.fhir.org/datatypes.html#CodeableConcept">CodeableConcept (FHIR)</a></p></td>
-<td><p>[0..1]</p></td>
-<td><p>An indicator specifying whether the feature is on the forward or reverse strand of a double-stranded sequence. If not set, the feature is assumed to be on the forward strand (by convention). If the sequence is single-stranded and this attribute is set, it must not be set to “reverse”.</p></td>
+<tr class="row-even"><td><p>associatedGenes</p></td>
+<td><p>identifier</p></td>
+<td><p>[0..*]</p></td>
+<td><p>A list of gene(s) associated with the transcript. Note: This structure provides support for fusions, prokaryotic operons, etc, but it does not specify which region(s) or feature(s) within the transcript are associated with a particular gene.</p></td>
 </tr>
 </tbody>
 </table>
