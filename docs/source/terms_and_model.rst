@@ -1,11 +1,14 @@
-Terminology and Model 
-!!!!!!!!!!!!!!!!!!!!!
+Terminology and Information Model 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 This is a DRAFT information model that was developed as part of the GA4GH GKS SA subgroup's exercise to model sequence features and transcripts. It is a work in progress.
 
 This information model was derived from the `draft conceptual and logical models <https://docs.google.com/presentation/d/1WdDSpr3XqSt9TXp_iyr2FiCBM4BANbL6JM24H1I6UjE/edit#slide=id.p>`__ that were developed as foundational work for this effort. Please reference those models in addition to this documentation (which is incomplete).
 
 Note: Some elements are sourced from the `Variation Representation Specification (VRS) <https://vrs.ga4gh.org/en/latest/index.html>`__ and others from the `HL7 Clinical Genomics FHIR Molecular Sequence Resource <https://build.fhir.org/branches/cg-im-molseq-work_in_progress/molecularsequence.html>`__. This draft model was aligned to those specifications as much as possible while still achieving the goals of the SA modeling exercise.
+
+Core Classes
+############
 
 .. _Sequence:
 
