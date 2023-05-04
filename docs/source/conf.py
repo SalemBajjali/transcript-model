@@ -75,6 +75,12 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+extensions = [
+    # other extensions...
+    'sphinx.ext.intersphinx',
+    # disable the linkcheck builder extension
+    # 'sphinx.builders.linkcheck',
+]
 
 html_css_files = ['theme_overrides.css']
 
