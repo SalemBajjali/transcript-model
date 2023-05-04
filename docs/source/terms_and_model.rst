@@ -12,9 +12,9 @@ Note: Some elements are sourced from the `Variation Representation Specification
 .. figure:: images/Generalized_SA_Model.png
 
 
-  Draft SA Model
+  Current Draft Of Sequence Annotation Schema
 
-   **Legend** DRAFT model of Annotated Sequence, Transcript, and building blocks (including Sequence and SequenceFeature). See the `conceptual and logical models <https://docs.google.com/presentation/d/1WdDSpr3XqSt9TXp_iyr2FiCBM4BANbL6JM24H1I6UjE/edit#slide=id.p>`__ for rationale, design choices, and examples.
+   **Legend** Summary of image
 
 
 Core Classes
@@ -25,9 +25,9 @@ Core Classes
 Sequence
 $$$$$$$$
 
-The definition of Sequence is conceptually identical to `VRS Sequence <https://vrs.ga4gh.org/en/stable/terms_and_model.html#sequence>`__, but the information model is more detailed.
+The definition of Sequence is identical to `VRS Sequence <https://vrs.ga4gh.org/en/stable/terms_and_model.html#sequence>`__.
 
-A *sequence* is a contiguous, linear polymer of nucleic acid or amino acid Residues. Sequences are the prevalent representation of these polymers, particularly in the domain of variant representation.
+A *sequence* is a character string representation of a contiguous, linear polymer of nucleic acid or amino acid Residues. Sequences are the prevalent representation of these polymers, particularly in the domain of variant representation.
 
 .. include:: defs/DSAM/Sequence.rst
 
@@ -69,6 +69,8 @@ An *annotated sequence* is a sequence that contains annotations (e.g., features)
 
 Annotated Sequence
 $$$$$$$$$$$$$$$$$$
+
+An *annotated sequence* is a sequence with associated annotations (e.g., features). Structurally, the class is simply a container for a Sequence and located features. This class may serve as a generalized parent class that can be specialized to support complex types of annotated sequences (e.g., transcripts).
 
 
 .. include:: defs/DSAM/annotatedsequence.rst
