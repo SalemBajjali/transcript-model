@@ -1,10 +1,6 @@
 **Computational Definition**
 
-TBD
-
 **Information Model**
-
-A *transcript* is a type of annotated sequence. It represents a single-stranded RNA sequence that may contain structural features (e.g., exons) and functional features (e.g., coding region). Because the concept of *transcript* is so widely used, and because the concepts of sequence, exon, and gene are so closely intertwined with it, an explicit model for Transcript was developed.
 
 .. list-table::
    :class: clean-wrap
