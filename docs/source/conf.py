@@ -12,9 +12,6 @@
 #
 # import os
 import re
-import urllib3
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
 # import subprocess
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
