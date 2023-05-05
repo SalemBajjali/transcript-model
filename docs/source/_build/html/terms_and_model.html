@@ -40,6 +40,7 @@
   <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Annotated Sequence" href="annotatedsequence.html" />
     <link rel="prev" title="Introduction" href="introduction.html" /> 
 </head>
 
@@ -93,15 +94,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#sequencecontext">SequenceContext</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#annotated-sequence">Annotated Sequence</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id6">Annotated Sequence</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#transcript">Transcript</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="annotatedsequence.html">Annotated Sequence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transcript.html">Transcript</a></li>
 <li class="toctree-l1"><a class="reference internal" href="schema.html">Schema</a></li>
-<li class="toctree-l1"><a class="reference internal" href="References.html">References</a></li>
 </ul>
 
             
@@ -166,32 +161,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <section id="terminology-and-information-model">
-<h1>Terminology and Information Model<a class="headerlink" href="#terminology-and-information-model" title="Permalink to this heading">¶</a></h1>
-<p>This is a DRAFT information model that was developed as part of the GA4GH GKS SA subgroup’s exercise to model sequence features and transcripts. It is a work in progress.</p>
-<p>This information model was derived from the <a class="reference external" href="https://docs.google.com/presentation/d/1WdDSpr3XqSt9TXp_iyr2FiCBM4BANbL6JM24H1I6UjE/edit#slide=id.p">draft conceptual and logical models</a> that were developed as foundational work for this effort. Please reference those models in addition to this documentation (which is incomplete).</p>
-<p>Note: Some elements are sourced from the <a class="reference external" href="https://vrs.ga4gh.org/en/latest/index.html">Variation Representation Specification (VRS)</a> and others from the <a class="reference external" href="https://build.fhir.org/branches/cg-im-molseq-work_in_progress/molecularsequence.html">HL7 Clinical Genomics FHIR Molecular Sequence Resource</a>. This draft model was aligned to those specifications as much as possible while still achieving the goals of the SA modeling exercise.</p>
-<figure class="align-default" id="id8">
-<span id="schema-temp"></span><img alt="_images/Generalized_SA_Model.png" src="_images/Generalized_SA_Model.png" />
-<figcaption>
-<p><span class="caption-text">Current Draft Of Sequence Annotation Schema</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
-<div class="legend">
-<blockquote>
-<div><p><strong>Legend</strong> Summary of image</p>
-</div></blockquote>
-</div>
-</figcaption>
-</figure>
-<section id="core-classes">
-<h2>Core Classes<a class="headerlink" href="#core-classes" title="Permalink to this heading">¶</a></h2>
+  <section id="terminology-and-model">
+<h1>Terminology and Model<a class="headerlink" href="#terminology-and-model" title="Permalink to this heading">¶</a></h1>
+<p>Summary goes here</p>
 <section id="sequence">
-<span id="id1"></span><h3>Sequence<a class="headerlink" href="#sequence" title="Permalink to this heading">¶</a></h3>
-<p>The definition of Sequence is identical to <a class="reference external" href="https://vrs.ga4gh.org/en/stable/terms_and_model.html#sequence">VRS Sequence</a>.</p>
-<p>A <em>sequence</em> is a character string representation of a contiguous, linear polymer of nucleic acid or amino acid Residues. Sequences are the prevalent representation of these polymers, particularly in the domain of variant representation.</p>
+<span id="id1"></span><h2>Sequence<a class="headerlink" href="#sequence" title="Permalink to this heading">¶</a></h2>
+<p>Summary goes here</p>
 <p><strong>Computational Definition</strong></p>
 <p>Summary goes here</p>
 <p><strong>Information Model</strong></p>
-<p>A string constrained to match the regular expression <code class="docutils literal notranslate"><span class="pre">^[A-Z*\-]*$</span></code>, derived from the IUPAC one-letter nucleic acid and amino acid codes.</p>
+<p>Summary goes here</p>
 <table class="clean-wrap docutils align-left">
 <thead>
 <tr class="row-odd"><th class="head"><p>Field</p></th>
@@ -207,7 +186,6 @@
 <tr class="row-odd"><td><p>identifier</p></td>
 <td><p><a class="reference external" href="https://build.fhir.org/datatypes.html#Identifier">Identifier (FHIR)</a></p></td>
 <td><p>[0..*]</p></td>
-<td><p>Identifier(s) for the sequence. Note the complex datatype includes attributes to capture both the identifer and the system or namespace that assigned the identifier. Identifiers MUST be unique within a system or namespace.</p></td>
 </tr>
 <tr class="row-even"><td><p>name</p></td>
 <td><p>string</p></td>
@@ -314,70 +292,6 @@
 <tr class="row-even"><td><p>strand</p></td>
 <td><p><a class="reference external" href="https://build.fhir.org/datatypes.html#CodeableConcept">CodeableConcept (FHIR)</a></p></td>
 <td><p>[0..1]</p></td>
-<td><p>An indicator specifying whether the feature is on the forward or reverse strand of a double-stranded sequence. If not set, the feature is assumed to be on the forward strand (by convention). If the sequence is single-stranded and this attribute is set, it must not be set to “reverse”.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="annotated-sequence">
-<span id="id5"></span><h2>Annotated Sequence<a class="headerlink" href="#annotated-sequence" title="Permalink to this heading">¶</a></h2>
-<p>An <em>annotated sequence</em> is a sequence that contains annotations (e.g., features).</p>
-<section id="id6">
-<h3>Annotated Sequence<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
-<p>An <em>annotated sequence</em> is a sequence with associated annotations (e.g., features). Structurally, the class is simply a container for a Sequence and located features. This class may serve as a generalized parent class that can be specialized to support complex types of annotated sequences (e.g., transcripts).</p>
-<p><strong>Computational Definition</strong></p>
-<p><strong>Information Model</strong></p>
-<table class="clean-wrap docutils align-left">
-<thead>
-<tr class="row-odd"><th class="head"><p>Field</p></th>
-<th class="head"><p>Type</p></th>
-<th class="head"><p>Limits</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>sequence</p></td>
-<td><p><a class="reference internal" href="#sequence"><span class="std std-ref">Sequence</span></a></p></td>
-<td><p>[1..1]</p></td>
-<td><p>The Sequence that is annotated with features.</p></td>
-</tr>
-<tr class="row-odd"><td><p>features</p></td>
-<td><p><a class="reference internal" href="#locatedfeature"><span class="std std-ref">LocatedFeature</span></a></p></td>
-<td><p>[0..*]</p></td>
-<td><p>A list of annotated features on the Sequence.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="transcript">
-<span id="id7"></span><h3>Transcript<a class="headerlink" href="#transcript" title="Permalink to this heading">¶</a></h3>
-<p>A <em>transcript</em> is a type of annotated sequence.</p>
-<p><strong>Computational Definition</strong></p>
-<p><strong>Information Model</strong></p>
-<table class="clean-wrap docutils align-left">
-<thead>
-<tr class="row-odd"><th class="head"><p>Field</p></th>
-<th class="head"><p>Type</p></th>
-<th class="head"><p>Limits</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>exons</p></td>
-<td><p><a class="reference internal" href="#locatedfeature"><span class="std std-ref">LocatedFeature</span></a></p></td>
-<td><p>[0..*]</p></td>
-<td><p>A list of sequence features representing the exons of the transcript.</p></td>
-</tr>
-<tr class="row-odd"><td><p>codingRegion</p></td>
-<td><p><a class="reference internal" href="#locatedfeature"><span class="std std-ref">LocatedFeature</span></a></p></td>
-<td><p>[0..*]</p></td>
-<td><p>A list of sequence features representing the coding region of the transcript.</p></td>
-</tr>
-<tr class="row-even"><td><p>associatedGenes</p></td>
-<td><p>identifier</p></td>
-<td><p>[0..*]</p></td>
-<td><p>A list of gene(s) associated with the transcript. Note: This structure provides support for fusions, prokaryotic operons, etc, but it does not specify which region(s) or feature(s) within the transcript are associated with a particular gene.</p></td>
 </tr>
 </tbody>
 </table>
@@ -391,6 +305,8 @@
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="annotatedsequence.html" class="btn btn-neutral float-right" title="Annotated Sequence" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
