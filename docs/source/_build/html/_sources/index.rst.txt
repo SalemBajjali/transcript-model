@@ -3,8 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Proposed SA Models
-!!!!!!!!!!!!!!!!!!
+GKS-Transcript
+!!!!!!!!!!!!!!
+
+
+.. note::
+
+   This is a test document. Everything in this documentation is not real and was made up. 
+   
+Summary can go here. 
 
 .. toctree::
    :maxdepth: 2
@@ -14,7 +21,7 @@ Proposed SA Models
    terms_and_model
    annotatedsequence
    transcript
-   References
+   schema
 
 
 .. Indices and tables
