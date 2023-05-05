@@ -1,10 +1,6 @@
 **Computational Definition**
 
-Summary goes here
-
 **Information Model**
-
-Summary goes here
 
 .. list-table::
    :class: clean-wrap
@@ -15,15 +11,12 @@ Summary goes here
    *  - Field 
       - Type
       - Limits
-   *  - identifier 
-      - Identifier
-      - [0..*]
-   *  - type
-      - CodableConcept
+      - Description
+   *  - sequence
+      - :ref:`Sequence`
       - [1..1]
-   *  - name
-      - string
+      - The Sequence that is annotated with features.
+   *  - features
+      - :ref:`LocatedFeature`
       - [0..*]
-   *  - contexts
-      - ContextualizedFeature
-      - [0..*]
+      - A list of annotated features on the Sequence.
