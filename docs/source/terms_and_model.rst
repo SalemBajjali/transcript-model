@@ -1,5 +1,5 @@
-Terminology and Information Model 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Terminology and Model 
+!!!!!!!!!!!!!!!!!!!!!
 
 This is a DRAFT information model that was developed as part of the GA4GH GKS SA subgroup's exercise to model sequence features and transcripts. It is a work in progress.
 
@@ -23,7 +23,7 @@ Core Classes
 .. _Sequence:
 
 Sequence
-$$$$$$$$
+########
 
 The definition of Sequence is identical to `VRS Sequence <https://vrs.ga4gh.org/en/stable/terms_and_model.html#sequence>`__.
 
@@ -34,18 +34,18 @@ A *sequence* is a character string representation of a contiguous, linear polyme
 .. _LocatedFeature:
 
 LocatedFeature
-$$$$$$$$$$$$$$
+##############
 
-A *located feature* is a mapping of a sequence feature to a location on a sequence.
+Summary goes here 
 
 .. include:: defs/DSAM/LocatedFeature.rst
 
 .. _SequenceFeature:
 
 SequenceFeature
-$$$$$$$$$$$$$$$
+###############
 
-A *sequence feature* is a structural or functional feature that can be annotated on a Sequence.
+Summary goes here 
 
 .. include:: defs/DSAM/SequenceFeature.rst
 
@@ -54,9 +54,9 @@ A *sequence feature* is a structural or functional feature that can be annotated
 .. _SequenceContext:
 
 SequenceContext
-$$$$$$$$$$$$$$$
+###############
 
-A *sequence context* is the definition of a location on a sequence.
+Summary goes here 
 
 .. include:: defs/DSAM/SequenceContext.rst 
 
