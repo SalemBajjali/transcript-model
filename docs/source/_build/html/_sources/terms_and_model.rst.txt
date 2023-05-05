@@ -10,15 +10,25 @@ Summary goes here
 
 .. .. _Sequence-Based-View:
 
-.. Sequence-Based View
-.. ###################
+.. figure:: images/Generalized_SA_Model.png
+
+
+  Current Draft Of Sequence Annotation Schema
+
+   **Legend** Summary of image
+
+
+Core Classes
+@@@@@@@@@@@@
 
 .. _Sequence:
 
 Sequence
 ########
 
-Summary goes here
+The definition of Sequence is identical to `VRS Sequence <https://vrs.ga4gh.org/en/stable/terms_and_model.html#sequence>`__.
+
+A *sequence* is a character string representation of a contiguous, linear polymer of nucleic acid or amino acid Residues. Sequences are the prevalent representation of these polymers, particularly in the domain of variant representation.
 
 .. include:: defs/DSAM/Sequence.rst
 
@@ -78,5 +88,8 @@ Summary goes here
 
 .. Summary goes here 
 
-.. .. include:: defs/DSAM/SequenceFBV.rst
+An *annotated sequence* is a sequence with associated annotations (e.g., features). Structurally, the class is simply a container for a Sequence and located features. This class may serve as a generalized parent class that can be specialized to support complex types of annotated sequences (e.g., transcripts).
+
+
+.. include:: defs/DSAM/annotatedsequence.rst
 
