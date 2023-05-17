@@ -1,6 +1,7 @@
 .vscode
 __pycache__
 .DS_Store
+.idea
 docs/.DS_Store
 docs/source/.DS_Store
 docs/source/_build/doctrees
