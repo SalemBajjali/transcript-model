@@ -85,10 +85,8 @@
             
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../terms_and_model.html">Terminology and Model</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../annotatedsequence.html">Annotated Sequence</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../transcript.html">Transcript</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../schema.html">Schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../terms_and_model.html">Terminology and Information Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../References.html">References</a></li>
 </ul>
 
             
@@ -154,28 +152,32 @@
            <div itemprop="articleBody">
             
   <p><strong>Computational Definition</strong></p>
-<p>Summary goes here</p>
+<p>TBD</p>
 <p><strong>Information Model</strong></p>
-<p>Summary goes here</p>
+<p>The definition of a location on a given sequence. This mapping provides sequence context (<em>contextualization</em>) for a parent entity (e.g., a feature).</p>
 <table class="clean-wrap docutils align-left">
 <thead>
 <tr class="row-odd"><th class="head"><p>Field</p></th>
 <th class="head"><p>Type</p></th>
 <th class="head"><p>Limits</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>sequence</p></td>
 <td><p><a class="reference internal" href="../../terms_and_model.html#sequence"><span class="std std-ref">Sequence</span></a></p></td>
 <td><p>[1..1]</p></td>
+<td><p>The Sequence that provides the context for the mapped location.</p></td>
 </tr>
 <tr class="row-odd"><td><p>location</p></td>
-<td><p><a class="reference external" href="https://vrs.ga4gh.org/en/stable/terms_and_model.html#locations-and-intervals">Location</a></p></td>
+<td><p><a class="reference external" href="https://vrs.ga4gh.org/en/stable/terms_and_model.html#locations-and-intervals">Location (VRS)</a></p></td>
 <td><p>[1..1]</p></td>
+<td><p>A location that defines a region (interval) on the given Sequence.</p></td>
 </tr>
 <tr class="row-even"><td><p>strand</p></td>
 <td><p><a class="reference external" href="https://build.fhir.org/datatypes.html#CodeableConcept">CodeableConcept (FHIR)</a></p></td>
 <td><p>[0..1]</p></td>
+<td><p>An indicator specifying whether the feature is on the forward or reverse strand of a double-stranded sequence. If not set, the feature is assumed to be on the forward strand (by convention). If the sequence is single-stranded and this attribute is set, it must not be set to “reverse”.</p></td>
 </tr>
 </tbody>
 </table>
