@@ -12,8 +12,6 @@ Proposed SA Models
    
    introduction
    terms_and_model
-   annotatedsequence
-   transcript
    References
 
 
