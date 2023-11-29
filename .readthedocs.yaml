@@ -23,3 +23,7 @@ sphinx:
 #   version: 3.9
 #   install:
 #     - requirements: docs/source/requirements.txt
+
+python:
+  install:
+    - requirements: docs/source/requirements.txt
